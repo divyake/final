@@ -12,7 +12,7 @@ export const headData = {
 export const heroData = {
   title: '',
   name: 'Arishmita Mukherjee',
-  subtitle: 'I\'m a feminist who loves aircraft. ',
+  subtitle: 'I\'m a feminist who loves aircrafts. ',
   cta: '',
 };
 
