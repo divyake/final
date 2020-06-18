@@ -19,12 +19,13 @@ const Footer = () => {
         <div className="social-links">
           {networks &&
             networks.map(network => {
-              const { id, name, url } = network;
+              const { id, name, url, title } = network;
               return (
                 <a
                   key={id}
                   href={url || 'https://github.com/cobidev/gatsby-simplefolio'}
                   rel="noopener noreferrer"
+                  title={title} 
                   target="_blank"
                   aria-label={name}
                 >
@@ -34,12 +35,7 @@ const Footer = () => {
             })}
         </div>
         <hr />
-        <p className="footer__text">
-          © {new Date().getFullYear()} - Template developed by{' '}
-          <a href="https://github.com/cobidev" target="_blank" rel="noopener noreferrer">
-            Jacobo Martínez
-          </a>
-        </p>
+        <p className="footer__text">© {new Date().getFullYear()} - Developed with love &#10084;</p>
 
         {isEnabled && <GithubButtons />}
       </Container>
